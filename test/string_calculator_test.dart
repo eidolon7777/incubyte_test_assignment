@@ -20,6 +20,12 @@ void main() {
     expect(calculator.add("1,2,3"), 6);
   });
 
-  
+  test('add returns sum for multiple number string with new line', () {
+    expect(calculator.add("1 \n 2 \n3"), 6);
+  });
+
+    test('add returns sum for multiple number string with new line and comma', () {
+    expect(calculator.add("1 \n 2 \n3,4"), 10);
+  });
 
 }
