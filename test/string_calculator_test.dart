@@ -28,4 +28,7 @@ void main() {
     expect(calculator.add("1 \n 2 \n3,4"), 10);
   });
 
+  test('add returns sum for multiple number string with custom delimiter', () {
+    expect(calculator.add("//;\n1;2"), 3);
+  });
 }
