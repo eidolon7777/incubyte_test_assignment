@@ -8,4 +8,12 @@ void main() {
     calculator = StringCalculator();
   });
 
+  test('add returns 0 for empty string', () {
+    expect(calculator.add(""), 0);
+  });
+
+  test('add returns number for single number string', () {
+    expect(calculator.add("1"), 1);
+  });
+
 }
