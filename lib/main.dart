@@ -4,5 +4,5 @@ void main() {
   late StringCalculator calculator;
   calculator = StringCalculator();
 
-  print(calculator.add("123"));
+  print(calculator.add("1,2,3"));
 }

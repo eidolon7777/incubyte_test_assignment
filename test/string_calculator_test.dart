@@ -16,4 +16,10 @@ void main() {
     expect(calculator.add("1"), 1);
   });
 
+  test('add returns sum for multiple number string', () {
+    expect(calculator.add("1,2,3"), 6);
+  });
+
+  
+
 }

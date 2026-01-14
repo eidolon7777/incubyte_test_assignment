@@ -4,7 +4,8 @@ class StringCalculator {
     if (numbers.isEmpty) {
       return 0;
     }
-    return int.parse(numbers);
+    List<String> numberList = numbers.split(',');
+    return numberList.map((element) => int.parse(element)).fold(0,(value, element) => value + element);
   }
 
 }
